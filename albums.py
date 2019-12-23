@@ -56,7 +56,7 @@ def updateAlbum():
         "totalSongs":updateVal[3],
         "cds":updateVal[4]
     }
-    print(query,originalValue)
+    # print(query,originalValue)
     fetch_collection = get_album()
     fetch_collection.update_one(originalValue,query)
 
